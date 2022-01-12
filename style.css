@@ -431,14 +431,16 @@ h6, span{
 footer{
     padding: 3% 0 0 0;
 }
+footer h4{
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 20;
+}
 .open-hours, .footer-content,.contact-info{
     max-width: 33%;
     display: block;
 }
-.open-hours h4{
-    font-size: 22px;
-}
-.open-hours h5, .open-hours h4, .open-hours h5 span{
+.open-hours h5, .open-hours h5 span{
     font-weight: 400;
 }
 .open-hours h5 span{
@@ -450,11 +452,14 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+.open-hours ul li h5, .contact-info ul li{
+    font-size: 16px;
+}
 .open-hours ul li, .contact-info ul li{
     display: block;
     width: 100%;
 }
-.footer-content .logo, .open-hours h4, .contact-info h5{
+.footer-content .logo, .open-hours h4, .contact-info h4{
     margin-bottom: 20px;
 }
 .contact-info h5{
@@ -463,7 +468,10 @@ footer{
     color: var(--secondary-color);
     text-transform: capitalize;
 }
-
+.footer-content p{
+    font-size: 15px;
+    font-weight: 400;
+}
 /*--------------------Footer Section Responsive---------------------*/
 @media (min-width: 360px) and (max-width: 680px){
     footer{
