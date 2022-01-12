@@ -7,8 +7,7 @@
     font-family: var(--primaryFont);
 }
 
-
-/*--------Global styles--------*/
+/*-------------------------------Common Styles------------------------------*/
 :root{
     --primary-color: #000;
     --secondary-color: #F34949;
@@ -72,17 +71,17 @@ h6, span{
     display: flex;
     justify-content: space-between;
 }
+
+/*----------------------------------Header Section Style---------------------------------*/
+.logo-area span{
+    font-size: 18px;
+    font-weight: 600;
+}
 .nav-top li a{
     padding: 0 20px;
     color: #000;
     font-weight: 200;
     font-size: 16px;
-}
-
-/*-------Header banner area---------*/
-.logo-area span{
-    font-size: 18px;
-    font-weight: 600;
 }
 .header-banner-section{
     display: flex;
@@ -137,7 +136,6 @@ h6, span{
     width: .5px;
     height: 75px;
 }
-
 .banner-img {
     height: 450px;
     width: 550px
@@ -147,10 +145,8 @@ h6, span{
     height: 100%;
 }
 
-/*------------------Header Responsive------------------*/
-
-@media (max-width:700px){
-    
+/*-----------------------------Header Section Responsive----------------------------*/
+@media (max-width:700px){  
     .header-nav .nav-top{
         display: none;
     }
@@ -196,9 +192,9 @@ h6, span{
         margin: 10px auto;
     }
 }
+/*-----------------------------------Header Responsive End-------------------------*/
 
-
-/*------------------About section design-------------------*/
+/*----------------------------------About section design----------------------------*/
 .about-section{
     gap: 35px;
     margin-top: 70px;
@@ -224,7 +220,7 @@ h6, span{
     padding: 10px 50px;
 }
 
-/*---------------About section responsive---------------*/
+/*---------------------------------About Section Responsive---------------------------------*/
 @media (max-width:700px){
     .about-section{
         flex-direction: column;
@@ -240,10 +236,10 @@ h6, span{
         flex-direction: column;
     }
 }
+/*--------------------------------------About Responsive End------------------------------*/
 
 
-
-/*------------------Dishes Section------------------*/
+/*---------------------------------Dishes Section Style----------------------------------*/
 .dishes-section{
     background: #f7f8f9;
     padding: 30px 0;
@@ -252,7 +248,6 @@ h6, span{
     text-align: center;
     margin: 8%;
 }
-
 .dish-content-box {
     min-width: 40%;
     margin-top: 4%;
@@ -268,7 +263,6 @@ h6, span{
     font-size: 60px;
     font-weight: 600;
 }
-
 .dish-num h1::after {
     content: '';
     display: block;
@@ -299,7 +293,7 @@ h6, span{
     margin: 20px 0;
 }
 
-/*------------------Dishes Section Responsive------------------*/
+/*-------------------------------------Dishes Section Responsive------------------------------*/
 @media (min-width: 360px) and (max-width: 680px){
     .dish-content-box, .dish-box{
         flex-direction: column;
@@ -329,8 +323,10 @@ h6, span{
         max-width: 90%;
     }
 }
+/*-----------------------------Dishes Responsive End-------------------------------*/
 
-/*------------------Menu Section----------------------*/
+
+/*---------------------------------Menu Section------------------------------*/
 .menu-section{
     margin: 10%;
 }
@@ -360,15 +356,16 @@ h6, span{
     color: #4d4c4c;
 }
 
-/*------------------Menu section Responsive--------------------*/
+/*------------------------------Menu section Responsive----------------------------------*/
 @media (min-width: 360px) and (max-width: 680px){
     .menu-box{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+/*---------------------------------Menu Responsive End-----------------------------------*/
 
 
-/*--------------------Booking section-----------------------*/
+/*---------------------------------Booking section----------------------------------*/
 .booking-section{
     background-image: url(./img/t3.jpg);
     background-size: cover;
@@ -399,7 +396,6 @@ h6, span{
     border: 0;
     border-bottom: 1px solid #000;
     border-radius: 5px;
-
 }
 .booking-form form input[type="submit"] {
     display: inline-block;
@@ -414,7 +410,7 @@ h6, span{
     border: 1px solid rgb(75, 73, 74);
 }
 
-/*---------------------Booking section responsive-------------------------*/
+/*------------------------------Booking section responsive-----------------------------*/
 @media (min-width: 360px) and (max-width:  680px){
     .booking-section{
         margin-top: 100px;
@@ -426,8 +422,10 @@ h6, span{
         height: 500px;
     }
 }
+/*------------------------------Booking Responsive End---------------------------------*/
 
-/*------------------------Footer Section---------------------*/
+
+/*--------------------------------Footer Section Style--------------------------------*/
 footer{
     padding: 3% 0 0 0;
 }
@@ -446,7 +444,6 @@ footer h4{
 .open-hours h5 span{
     padding-left: 40px;
     display: inline-block;
-
 }
 .open-hours ul li{
     display: flex;
@@ -472,7 +469,8 @@ footer h4{
     font-size: 15px;
     font-weight: 400;
 }
-/*--------------------Footer Section Responsive---------------------*/
+
+/*-----------------------------Footer Section Responsive-------------------------------------*/
 @media (min-width: 360px) and (max-width: 680px){
     footer{
         padding: 0;
@@ -486,3 +484,4 @@ footer h4{
         margin-bottom: 30px;
     }
 }
+/*--------------------------------Footer Responsive End-----------------------------------------*/
