@@ -30,6 +30,9 @@ h5{
     font-family: var(--secondary-font);
     color: #000;
 }
+p{
+    letter-spacing: .5px;
+}
 li, a{
     text-decoration: none;
     list-style: none;
@@ -38,9 +41,15 @@ li, a{
 section{
     margin-top: 50px;
 }
+.t-center{
+    text-align: center;
+}
 .container{
     max-width: 90%;
     margin: 50px auto;
+}
+.mt-50{
+    margin-top: 50px;
 }
 .action-btn {
     background: var(--secondary-color);
@@ -157,12 +166,15 @@ h6, span {
     }
 }
 
-@media (min-width: 360px) and (max-width: 600px){
+@media (min-width: 360px) and (max-width: 680px){
     h1{
         font-size: 40px;
     }
+    h2{
+        font-size: 25px;
+    }
     p{
-        font-size: 13px;
+        font-size: 14px;
     }
     .logo-area{
         margin: auto;
@@ -208,7 +220,6 @@ h6, span {
     font-weight: 300;
     font-size: 15px;
     color: #413e3b;
-    letter-spacing: .2px;
 }
 .about-contents a {
     margin-top: 30px;
@@ -226,9 +237,134 @@ h6, span {
         height: 350px
     }
 }
-@media (min-width: 360px) and (max-width: 600px){
+@media (min-width: 360px) and (max-width: 680px){
     .about-section{
         flex-direction: column;
     }
 }
 
+
+
+/*------------------Dishes Section------------------*/
+.dishes-section{
+    background: #f7f8f9;
+    padding: 30px 0;
+}
+.dishes-heading{
+    text-align: center;
+    margin: 8%;
+}
+
+.dish-content-box {
+    min-width: 40%;
+    margin-top: 4%;
+}
+.dish-content-box-2{
+    max-width: 50%;
+}
+.dish-box{
+    margin: 60px 0;
+}
+.dish-num h1{
+    position: relative;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.dish-num h1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 29px;
+    left: 100px;
+    width: 218px;
+    height: 2px;
+    background: #000;
+}
+.dish-con {
+    margin-top: 15%;
+    margin-left: 3%;
+}
+.dish-con h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.dish-con h3 span{
+    margin-left: 0;
+}
+.dish-con p{
+    max-width: 60%;
+    margin: 1em 0;
+    letter-spacing: .5px;
+}
+.dish-con a{
+    margin: 20px 0;
+}
+
+/*------------------Dishes Section Responsive------------------*/
+@media (min-width: 360px) and (max-width: 680px){
+    .dish-content-box, .dish-box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .dish-content-box-2{
+        max-width: 100%;
+    }
+    .dish-box-2{
+        flex-direction: column-reverse;
+    }
+    .dish-box{
+        margin-top: 15%;
+    }
+    .dish-num h1::after {
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 113px;
+        height: 1px;
+    }
+    .dish-con p {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    .dish-img img{
+        max-width: 90%;
+    }
+}
+
+/*------------------Menu Section----------------------*/
+.menu-section{
+    margin: 10%;
+}
+.menu-box{
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+}
+.img-content-box{
+    align-items: center;
+    gap: 10px
+}
+.item-price{
+    margin-top: 20px;
+    font-size: 22px;
+}
+.item-box img{
+    width: 23%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.item-description h5{
+    font-size: 14px;
+    margin-top: 7px;
+    color: #4d4c4c;
+}
+
+/*------------------Menu section Responsive--------------------*/
+@media (min-width: 360px) and (max-width: 680px){
+    .menu-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
