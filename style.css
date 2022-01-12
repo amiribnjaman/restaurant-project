@@ -368,3 +368,120 @@ h6, span {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
+/*--------------------Booking section-----------------------*/
+.booking-section{
+    background-image: url(./img/t3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 110vh;
+    color: #000;
+}
+.booking-form {
+    width: 40%;
+    height: 550px;
+    background: #fff;
+    position: relative;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 30px;
+    padding: 45px 0;
+}
+.booking-form form{
+    width: 80%;
+    margin: 10px auto;
+}
+.booking-form form input, textarea, select{
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+    padding: 8px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    border-radius: 5px;
+
+}
+.booking-form form input[type="submit"] {
+    display: inline-block;
+    padding: 10px;
+    width: 167px;
+    border-radius: 25px;
+    border: 0;
+    margin-top: 20px;
+}
+.date .time{
+    display: inline-block;
+}
+.booking-form form input:focus, textarea:focus, select:focus{
+    border: 0;
+    border: 1px solid rgb(75, 73, 74);
+}
+
+/*---------------------Booking section responsive-------------------------*/
+@media (min-width: 360px) and (max-width:  680px){
+    .booking-section{
+        margin-top: 100px;
+    }
+    .booking-form {
+        width: 100%;
+        top: 18px;
+        padding: 25px 0;
+        height: 500px;
+    }
+}
+
+/*------------------------Footer Section---------------------*/
+footer{
+    padding: 3% 0 0 0;
+}
+.open-hours, .footer-content,.contact-info{
+    max-width: 33%;
+    display: block;
+}
+.open-hours h4{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 22px;
+}
+.open-hours h5{
+    font-weight: 400;
+}
+.open-hours h5 span{
+    padding-left: 40px;
+    display: inline-block;
+    font-weight: 400;
+
+}
+.open-hours ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.open-hours ul li, .contact-info ul li{
+    display: block;
+    width: 100%;
+}
+.footer-content .logo{
+    margin-bottom: 20px;
+}
+.footer-content{
+    text-align: center;
+}
+.contact-info h5{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/*--------------------Footer Section Responsive---------------------*/
+@media (min-width: 360px) and (max-width: 680px){
+    .footer-section{
+        flex-direction: column;
+    }
+    .open-hours, .footer-content,.contact-info{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
